@@ -1,0 +1,19 @@
+/* inline css> internal css> external css */
+/* INLINE css has most priority */
+
+body{
+    background-color: #EAF6F6;
+}
+
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    width: 10%;
+    border-color: grey;
+    border-width: 5px;
+}
+
+h1,h3{
+    color: #66BFBF;
+}
+

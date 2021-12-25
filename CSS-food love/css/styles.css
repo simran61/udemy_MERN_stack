@@ -1,0 +1,38 @@
+/* mdn Home page> technologies> css> css reference> scroll down(keyword index)  */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference */
+
+/* TAG SELECTOR */
+
+h1{
+    color: red;
+    font-size: 100px;
+}
+
+img{
+    height: 200px;
+}
+
+/* pseudo class-->  classes which have colon in front like-->   :hover*/
+img:hover{
+    background-color: gold;
+}
+
+/* CLASS SELECTORS */
+
+.berries{
+    background-color: green;
+}
+
+.cucumber{
+    background-color: red;
+}
+
+.circular{
+    border-radius: 100%;
+}
+
+/* ID SELECTORS */
+
+#heading{
+    color: blue;
+}
