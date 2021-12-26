@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Noto+Sans:ital@0;1&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    color: #545454;
+}
+
+/* WAYS OF CENTERING */
+/* 1. text-align: center;
+ This will align everthing in center which does not have a width set. This works on FULL WIDTH  BLOCK elements (like p, h1) & INLINE-BLOCK elements (like img))
+
+2. centereing an element with specific width: marin: 0 auto; OR margin: auto 0;
+ h1{
+    width: 10%;
+    margin: 0 auto;
+}*/
+
+h1{
+    margin: 50px auto 0 auto;
+    font-weight: 500;
+    color: #45b29a;
+    font-family: 'Clicker Script', cursive;
+    font-size: 5.625em;
+    /* 16px =1em = 100% --> 90px= 90px/16=562.5% = 5.625em*/
+    /*1. px is STATIC
+    2. em & % is DYNAMIC ie it it takes the font-size relative to its parent/root div font-size
+    3. rem (MOST SAFE) means IGNORE ALL PARENT DIV SIZE & apply the exact size which we mentioned */   
+}
+
+/* SERIEF (has feets) (BY DEFAULT of browser --> Times)
+SANS-SERIF (no feets) (Arial by default)
+MONOSPACE (each alphabet takes equal space)*/
+
+
+h2{
+  font-size: 1.5rem;
+  margin-top: 0px;
+  /* here margin-top is extra */
+  font-weight: normal;
+  color: #45b29a;
+  padding-bottom: 10px;
+}
+
+h3{
+    color: #1e836c;
+}
+
+p{
+    line-height: 2;
+}
+
+hr{
+    border: 6px dotted #EAF6F6;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a{
+    color: #45b29a;
+    margin: 10px 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #1e836c;
+}
+
+/* we can change the width of BLOCK (p,h1) elements but not of INLINE (span) */
+/* INLINE-BLOCK: occupy the same and can also change their width */
+/* IMG is kind of INLINE-BLOCK */
+
+.top-container{
+    background-color: #e0ebe8;
+    position: relative;
+    padding-top: 100px;
+    /* height: 200px; */
+    /* width: 200px; */
+    /* border: 10px solid black; */
+    /* padding: 20px; */
+}
+
+/* DIAGONAL PATTERN OF 3 BOXES */
+
+/* .middle-container{
+    height: 200px;
+    width: 200px;
+    border: 20px solid black;
+    margin-left: 260px;
+    background-color: red;
+}
+
+.bottom-container{
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    margin-left: 500px;
+    background-color: blue;
+} */
+
+
+
+/* POSITIONING IN CSS */
+/* STATIC: this is the by default 
+
+RELATIVE: allow us to position the element to relative to how it would had been positioned had it been static. 
+It does not affect the position of anything around it and just flows (overlap) around. 
+
+    img{
+        position: relative;
+        top: 20px; --> this means that we are giving margin of 20px from top. --> top == MARGIN-top (from original position of element)
+    }
+
+ABSOLUTE: allows us to position the element relative to its parent.
+It affects the flow/position of rest of the elements as well.
+
+div{
+    position: absolute;
+}
+img{
+    position: absolute;
+    right: 30px; --> this means that img will take a margin of 30px from right BETWEEN THE IMG & PARENT DIV . --> right == PADDING-right (30px space b/t img & parent div from right-end)
+}
+
+REFER initialPosition.png AND finalposition.png FROM THE IMAGES FOLDER TO UNDERSTAND BETTER
+
+FIXED: sticky position (used in nav-bars)
+
+WHEN TO USE WHAT ??
+use REATIVE when you want to change the position of an element but DO NOT want to AFFECT POSITION OF OTHER ELEMENTS.
+*/
+
+.middle-container{
+    margin: 100px 0;
+}
+
+.bottom-container{
+    background-color: #c5ded7;
+    padding: 50px 0 20px;
+}
+
+.intro{
+    width: 30%;
+    margin: auto;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+}
+
+/* FLOAT --> KIND OF short code of display: flex 
+float has many PROBLEMS, so use it only to WRAP THE TEXT AROUND SOMETHING and NOT POSITIONING something
+
+CLEAR: ANTI-float*/
+
+.codeImg{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.designImg{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+/*
+.code-skill-description{
+    clear: left; --> THIS WILL CLEAR EVERYTHING FROM THE LEFT SIDE OF THE PARAGRAPH
+}
+
+.design-skill-description{
+    clear: right;
+} */
+
+.contact-message{
+    width: 40%;
+    margin: 40px auto 60px;
+    /* this MARGIN is 3 ELEMENT CIRCLE RULE ie (top) (left & right) (bottom)*/
+}
+
+/* https://css3buttongenerator.com/ 
+USE THIS SITE FOR STYLING BUTTON ---->> VERYYYYY USEFULLLL*/
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #1e836c);
+    background-image: -moz-linear-gradient(top, #11cdd4, #1e836c);
+    background-image: -ms-linear-gradient(top, #11cdd4, #1e836c);
+    background-image: -o-linear-gradient(top, #11cdd4, #1e836c);
+    background-image: linear-gradient(to bottom, #11cdd4, #1e836c);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.btn:hover {
+    background: #45b29a;
+    background-image: -webkit-linear-gradient(top, #45b29a, #2bc48d);
+    background-image: -moz-linear-gradient(top, #45b29a, #2bc48d);
+    background-image: -ms-linear-gradient(top, #45b29a, #2bc48d);
+    background-image: -o-linear-gradient(top, #45b29a, #2bc48d);
+    background-image: linear-gradient(to bottom, #45b29a, #2bc48d);
+    text-decoration: none;
+}
+
+.copyright{
+    color: #45b29a;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
