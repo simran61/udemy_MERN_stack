@@ -19,7 +19,7 @@ body{
 }*/
 
 h1{
-    margin: 50px auto 0 auto;
+    margin: 0 auto 0 auto;
     font-weight: 500;
     color: #45b29a;
     font-family: 'Clicker Script', cursive;
@@ -53,10 +53,10 @@ p{
 }
 
 hr{
-    border: 6px dotted #EAF6F6;
+    border: 6px dotted #c5ded7;
     border-bottom: none;
     width: 4%;
-    margin: 100px auto;
+    margin: 70px auto;
 }
 
 a{
@@ -66,6 +66,28 @@ a{
 }
 
 a:hover{
+    color: #1e836c;
+}
+
+.nav-bar{
+    height: 127px;
+    background-color: #e0ebe8;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.logo{
+    padding-top: 1rem;
+    width: 25%;
+}
+
+.nav-menu{
+    padding: 4.5%;
+    font-size: 1.2rem;
+}
+
+.active{
     color: #1e836c;
 }
 
@@ -161,7 +183,7 @@ use REATIVE when you want to change the position of an element but DO NOT want t
 
 .skill-row{
     width: 50%;
-    margin: 100px auto;
+    margin: 60px auto;
     text-align: left;
 }
 
@@ -202,11 +224,11 @@ USE THIS SITE FOR STYLING BUTTON ---->> VERYYYYY USEFULLLL*/
 
 .btn {
     background: #11cdd4;
-    background-image: -webkit-linear-gradient(top, #11cdd4, #1e836c);
-    background-image: -moz-linear-gradient(top, #11cdd4, #1e836c);
-    background-image: -ms-linear-gradient(top, #11cdd4, #1e836c);
-    background-image: -o-linear-gradient(top, #11cdd4, #1e836c);
-    background-image: linear-gradient(to bottom, #11cdd4, #1e836c);
+    background-image: -webkit-linear-gradient(top, #2ca78c, #9ed6c7);
+    background-image: -moz-linear-gradient(top, #2ca78c, #9ed6c7);
+    background-image: -ms-linear-gradient(top, #2ca78c, #9ed6c7);
+    background-image: -o-linear-gradient(top, #2ca78c, #9ed6c7);
+    background-image: linear-gradient(to bottom, #2ca78c, #9ed6c7);
     -webkit-border-radius: 8;
     -moz-border-radius: 8;
     border-radius: 8px;
@@ -218,17 +240,18 @@ USE THIS SITE FOR STYLING BUTTON ---->> VERYYYYY USEFULLLL*/
   
 .btn:hover {
     background: #45b29a;
-    background-image: -webkit-linear-gradient(top, #45b29a, #2bc48d);
-    background-image: -moz-linear-gradient(top, #45b29a, #2bc48d);
-    background-image: -ms-linear-gradient(top, #45b29a, #2bc48d);
-    background-image: -o-linear-gradient(top, #45b29a, #2bc48d);
-    background-image: linear-gradient(to bottom, #45b29a, #2bc48d);
+    background-image: -webkit-linear-gradient(top, #c5ded7, #45b29a);
+    background-image: -moz-linear-gradient(top, #c5ded7, #45b29a);
+    background-image: -ms-linear-gradient(top, #c5ded7, #45b29a);
+    background-image: -o-linear-gradient(top, #c5ded7, #45b29a);
+    background-image: linear-gradient(to bottom, #c5ded7, #45b29a);
     text-decoration: none;
+    color: #ffffff;
 }
 
 .copyright{
     color: #45b29a;
-    font-size: 0.75rem;
+    font-size: 0.90rem;
     padding: 20px 0;
 }
 
