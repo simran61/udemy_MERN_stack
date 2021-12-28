@@ -1,0 +1,201 @@
+/* watch video 89. again INTERMEDIATE CSS (explains combining css selectors) */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  }
+  
+  p {
+    color: #8f8f8f;
+  }
+  
+  /* Headings */
+  
+  .big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  
+  .section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  /* Containers */
+  
+  .container-fluid{
+    padding: 7% 15%;
+  }
+  
+  /* Sections */
+  
+  .colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+  }
+  
+  .white-section {
+    background-color: #fff;
+  }
+  
+  /* Navigation Bar */
+  
+  .navbar {
+    padding: 0 0 4.5rem;
+  }
+  
+  .navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }
+  
+  /* Buttons */
+  
+  .download-button {
+    margin: 5% 3% 5% 0;
+  }
+  
+  /* Title Section */
+  
+  #title .container-fluid {
+    padding: 3% 15% 7%;
+    /* padding: (top) (left & right) (bottom) */
+    text-align: left;
+  }
+  
+  /* Title Image */
+  
+  .title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;         
+    /* REFER Z INDEX FLOWCHART TO SEE HOW HOW THE IMG IS STILL BELOW WITHOUT USING Z-INDEX (ans. BY ONLY POSITIONING & FLOW/SEQUENCE [ans #feature code is written below the .title-image code] --->REFER z-index flowchart.png */
+    right: 30%;
+  }
+
+  /* Z-INDEX works only when something (either 1 or both) is positioned (ie absolute, relative or fixed) */
+  /* ABSOLUTE takes any html element out of the flow of the html so it no longer stacks or follow the natural flow or order */
+
+  /* REFER Z-INDEX FLOWCHART ---> z-index flowchart.png */
+  /* HOW TO CUT/HIDE THE BOTTOM IMG USING Z-INDEX */
+  /* .title-image{
+      width: 60%;
+      transform: rotate(25deg);
+      right: 30%;
+      position: absolute;
+  }
+  #features{
+      position: relative;
+      z-index: 1;
+  } */
+  /* REFER Z-INDEX FLOWCHART ---> z-index flowchart.png*/
+  
+  /* Features Section */
+  
+  #features {
+    position: relative;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+  .icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #ff4c68;
+  }
+  
+  /* Testimonial Section */
+  
+  #testimonials {
+    background-color: #ef8172;
+  }
+  
+  .testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+  }
+  
+  
+  #press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+  }
+  
+  .press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+  }
+  
+  /* Pricing Section */
+  
+  #pricing {
+    padding: 100px;
+  }
+  
+  .price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+  
+  .pricing-column {
+    padding: 3% 2%;
+  }
+  
+  /* CTA Section */
+  
+  
+  /* Footer Section */
+  
+  
+  .social-icon {
+    margin: 20px 10px;
+  }
+  
+  @media (max-width: 1028px) {
+  /* MAX-WIDTH ie when screen size is 1028px or less */
+  /* MIN-WIDTH ie with screen size 1028px or geater */
+    #title {
+      text-align: center;
+    }
+  
+    .title-image {
+      position: static;
+      transform: rotate(0);
+    }
+  }
+
+  /* @media (min-width: 900px) and (max-width: 1080px){
+    willl work for greater than 900px but less than 1080px
+  } */
+  
