@@ -1,4 +1,89 @@
-/* watch video 89. again INTERMEDIATE CSS (explains combining css selectors) */
+/* TYPES OF CSS SELECTORS video 89 */
+
+/* 1. MULTIPLE SELECTORS 
+selector1, selector2{
+  .....
+}
+
+h1, h2, h3, p {
+  color: red;
+} */
+
+/* 2. HIERARCHICAL SELECTOR
+selector1 selector2{
+  ....  -->this is read right to left ie target selector2 which is inside selector1
+  selector2 = child
+  selector1 = parent
+  selector1 & selector2 has SPACE in between
+}
+
+div h1{
+  color: red;  --> targeting all h1 inside div
+}
+
+.container-fluid #title{   --> we have targeted all the title id which is inside class container-fluid
+  text-align: left;
+} */
+
+/* 3. COMBINED SELECTOR
+selector1.selector2{  --> OR selector1#selector2
+  .... they both have to occur in same element ie <h1 id="title">heading</h1>
+  selector1 & selector2 has NO SPACE in between
+  they are read from RIGHT TO LEFT ie h1 which has an id title
+}
+
+h1#title{   ----> ie <h1 id="title">heading</h1> (h1 & #title are of same element)
+  color: red;
+}  
+*/
+
+
+/* PRACTICAL EXAPMPLE
+<div class="container">
+  <h1 id="heading" class="title">Hello world</h1>
+</div>
+
+<div class="container-fluid">
+  <h1 class="title">Good bye world</h1>
+</div>
+
+CODE TO COLOR hello world RED
+
+.container .title{
+  color: red;
+}  
+
+.container.title{  --> WITHOUT SPACE means that an element which has both class .container & .title
+  ie <h1 class="title container">Good bye world</h1>
+  color: red;       --> this will not work as there is no such element with both the classes (container & title)
+}  
+
+h1#heading{   --> this will target h1 with id heading
+  color: green;
+}
+
+*/
+
+/* CSS SELECTORS PRIORITY video 91 */
+/* <h1 id="heading" class="title"> Hello world </h1>
+
+h1{
+  color: red;
+  color: green; -->this will get priority (because of ORDER/SEQUENCE)
+}
+
+.title{
+  color: yellow; --> class has higher priority than element
+}
+
+#heading{
+  color: blue;  -->id has highest priority than element and class
+}
+
+PRIORITY ORDER
+INLINE CSS > ID SELECTOR > CLASS SELECTOR > ELEMENT SELECTOR
+highest to lowest priority
+*/
 
 body {
     font-family: 'Montserrat', sans-serif;
